@@ -1,0 +1,45 @@
+﻿
+            <div class="header-grid">
+    <div id="brand">
+        <h1>OmniVus.</h1>
+        <p>IT Service & Technology</p>
+    </div>
+    <nav id="top-menu">
+        @if(SignInManager.IsSignedIn(User))
+        {
+            <a asp-controller="Profile" asp-action="Index" asp-route-id="@User.FindFirst("UserId").Value">@await ProfileManager.DisplayNameAsync(User.FindFirst("UserId").Value)</a>    
+            <div class="social">
+               @* @if(User.IsInRole("admin"))
+                {
+                   <a asp-controller="admin" asp-action="users">users</a> 
+                }*@
+
+                <a asp-controller="authentication" asp-action="signout">sign out</a>
+            </div>   
+
+        }
+        else
+        {
+            <a href="mailto:info@domain.com">info@domain.com</a>
+            <div class="socials">
+                <a href="https://facebook.com">facebook</a>
+                <a href="https://twitter.com">twitter</a>
+                <a href="https://linkedin.com">linkedin</a>
+                <a href="https://youtube.com">youtube</a>
+            </div>         
+        }
+
+
+    </nav>
+    <nav id="main-menu">
+        <div class="menu-items">
+            <a asp-controller="Home" asp-action="Index">Home</a>
+            <a asp-controller="Services" asp-action="Index">Services</a>
+            <a asp-controller="Contacts" asp-action="Index">Contact</a>
+        </div>
+        @if(!SignInManager.IsSignedIn(User))
+        {
+            <a asp-controller="Authentication" asp-action="SignIn" class="btn btn-main">Sign In</a>
+        } 
+    </nav>
+</div>

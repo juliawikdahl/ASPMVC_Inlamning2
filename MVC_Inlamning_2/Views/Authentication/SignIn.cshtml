@@ -1,0 +1,48 @@
+﻿@model MVC_Inlamning_2.Models.SignIn
+
+@{
+    ViewData["Title"] = "SignIn";
+}
+
+
+<div class="blue-background" style="height:220px; " >
+        <div class="container">
+            <partial name ="_navbarPartial" />
+            <h1 class="d-flex justify-content-center">Sign In</h1>
+      </div>
+ </div>
+<div class="container">
+  
+    <div class="d-flex justify-content-center mt-4">
+        <div class="col-5">
+            <form asp-action="SignIn" asp-route-returnUrl="@Model.ReturnUrl">
+                <div class="signin mb-3">
+                    <label asp-for="Email" class="form-label"></label>
+                    <input asp-for="Email" class="form-control" aria-describedby="emailHelp">
+                    <span asp-validation-for="Email" class="form-text text-danger"></span>
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone.</div>      
+                </div>
+                <div class="signin mb-3">
+                    <label asp-for="Password" class="form-label"></label>
+                    <input asp-for="Password" class="form-control" aria-describedby="passwordHelp">
+                    <span asp-validation-for="Password" class="form-text text-danger"></span>   
+                </div>
+                <div class="form-text text-center text-danger mb-3">
+                    @Model.ErrorMessage 
+                </div>
+                <div class="d-grid mb-3">
+                    <button type="submit" class="btn btn-primary">@ViewData["Title"]</button>
+                </div>
+
+                <div class="d-grid gap-2 mb-4">
+                   
+                    <a asp-controller="Authentication" asp-action="SignUp">Don't have an account? Sign up here!</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

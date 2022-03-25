@@ -1,0 +1,19 @@
+﻿@model MVC_Inlamning_2.Models.User
+
+
+<div class="blue-background" style="height:220px; " >
+        <div class="container">
+            <partial name ="_navbarPartial" />
+            <h1 class="mt-4 d-flex justify-content-center">Min Profil:</h1>
+      </div>
+ </div>
+<div class="container mt-3">
+    <h3 class="border p-3">@Model.FirstName @Model.LastName</h3>
+    <p class="border p-3">@Model.Email</p>
+     <p class="border p-3">@Model.Address</p>
+      <p class="border p-3">@Model.PostalCode</p>
+       <p class="border p-3">@Model.City</p>
+        <p class="border p-3">@Model.Country</p>
+        <p class="border p-3">@ProfileManager.GetRolesById(@Model.Id)</p>
+</div>
+

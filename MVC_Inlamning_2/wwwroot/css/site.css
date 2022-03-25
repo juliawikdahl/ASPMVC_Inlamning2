@@ -1,0 +1,666 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&family=Montserrat:wght@400;600;700&family=Poppins:wght@100;400;700&family=Roboto:wght@400;700&display=swap");
+
+body {
+    font-family: "Karla", sans-serif;
+    color: #002249;
+}
+
+a {
+    color: #6c90b9;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #002249;
+    }
+
+.btn {
+    border-radius: 0;
+    padding: 1rem 2.55rem;
+}
+
+.btn-main {
+    color: #ffffff;
+    background-color: #006de8;
+    border-color: #006de8;
+}
+
+    .btn-main:hover {
+        color: #ffffff;
+        background-color: #0052af;
+    }
+
+.container {
+    padding: 0;
+}
+
+.blue-background {
+    background: white;
+    background: radial-gradient(circle, white 5%, #a9c7ec 100%);
+}
+
+.header-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "branding" "mainmenu";
+}
+
+#brand {
+    grid-area: branding;
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 25px;
+}
+
+    #brand h1 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+    }
+
+    #brand p {
+        font-family: "Karla", sans-serif;
+        font-size: 15px;
+        color: #6c90b9;
+        line-height: 0.5;
+    }
+
+#top-menu {
+    display: none;
+    grid-area: topmenu;
+    border-bottom: 1px solid #a9c7ec;
+    padding-top: 18px;
+    padding-bottom: 12px;
+    margin-left: 100px;
+}
+
+    #top-menu .socials a {
+        margin-left: 1rem;
+    }
+
+#main-menu {
+    grid-area: mainmenu;
+    padding-top: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+    #main-menu .menu-items {
+        margin-right: 2rem;
+    }
+
+        #main-menu .menu-items a {
+            margin-left: 4rem;
+        }
+
+.border {
+    border-color: black !important;
+}
+
+@media (min-width: 992px) {
+    .header-grid {
+        display: grid;
+        grid-template-columns: 274px auto;
+        grid-template-areas: "branding topmenu" "branding mainmenu";
+    }
+
+    #top-menu {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+#showcase1 {
+    display: flex;
+}
+
+    #showcase1 .column {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        #showcase1 .column .content p {
+            font-size: 24px;
+            color: #69a1bb;
+        }
+
+        #showcase1 .column .content h1 {
+            font-size: 80px;
+            color: #002249;
+            font-family: "Roboto", sans-serif;
+        }
+
+        #showcase1 .column .content .items {
+            display: flex;
+        }
+
+            #showcase1 .column .content .items .item {
+                display: flex;
+                align-items: center;
+            }
+
+                #showcase1 .column .content .items .item:first-child {
+                    margin-right: 6rem;
+                    margin-left: -1.5rem;
+                }
+
+                #showcase1 .column .content .items .item span {
+                    margin-top: -1rem;
+                    font-size: 24px;
+                }
+
+        #showcase1 .column .showcase-image {
+            margin-right: -5rem;
+        }
+
+
+/*# sourceMappingURL=site.css.map */
+
+
+/* Showcase 2  */
+
+#showcase2 {
+    display: flex;
+}
+
+    #showcase2 .column1 {
+        margin-top: 54px;
+    }
+
+    #showcase2 .column2 {
+        margin-left: 100px;
+    }
+
+    #showcase2 .ab {
+        color: #006DE8;
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 210px;
+    }
+
+.ab:after {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #006DE8; /* border-size & color are now controllable */
+    width: 70px;
+    height: 14px;
+    margin-left: 1em;
+}
+    #showcase2 h1 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 60px;
+    }
+
+    #showcase2 .long {
+        color: #69A1BB;
+        font-size: 16px;
+        margin-top: 55px;
+        line-height: 30px;
+    }
+
+    #showcase2 .Experience {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    #showcase2 .number {
+        color: #006DE8;
+        font-size: 100px;
+    }
+
+    #showcase2 .text {
+        color: #002249;
+        font-size: 30px;
+        width: 134px;
+        margin-top: 30px;
+        margin-left: 35px;
+    }
+
+    #showcase2 .Learn-button {
+        width: 173px;
+        height: 60px;
+        background-color: #006DE8;
+        border: none;
+        color: white;
+        font-weight: 16px;
+    }
+
+    #showcase2 .Video-button {
+        width: 196px;
+        height: 60px;
+        margin-left: 15px;
+        background-color: #B7C3D6;
+        border: none;
+        color: white;
+    }
+
+#Triangle {
+    position: Absolute;
+    z-index: -2;
+    margin-top: -1100px;
+    margin-left: 500px;
+}
+
+
+
+/* Form one */
+
+.h1 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 60px;
+    padding-top: 120px;
+    padding-bottom: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.p {
+    color: #C1D0DE;
+    font-size: 16px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+#form-one {
+    display: flex;
+    text-align: center;
+    padding-block-end: 130px;
+    padding-block-start: 20px;
+    margin-top: 100px;
+}
+
+    #form-one input:invalid:not(:focus):not(:placeholder-shown) {
+        border: 5px solid red;
+    }
+
+    #form-one textarea:invalid:not(:focus):not(:placeholder-shown) {
+        border: 5px solid red;
+    }
+
+    #form-one .container {
+        height: 840px;
+        color: #ffffff;
+        background-color: #00152D;
+    }
+
+.rows2 {
+    display: flex;
+    justify-content: center;
+}
+
+#floatingInput {
+    height: 80px;
+    padding-left: 15px;
+    background-color: #00152D;
+}
+
+.rad1 {
+    margin-right: 30px;
+}
+
+.textbox {
+    width: 1130px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    margin-left: 95px;
+    background-color: #00152D;
+}
+
+textarea::-webkit-input-placeholder {
+    color: #fff;
+
+}
+
+textarea {
+    resize: none;
+}
+
+
+#btn {
+    background-color: #006DE8;
+    color: white;
+    border: none;
+    text-align: center;
+    width: 239px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/* form-2  */
+
+.left input:invalid:not(:focus):not(:placeholder-shown) {
+    border: 5px solid red;
+}
+
+.background {
+    background-color: #F7FCFF;
+    display: flex;
+    justify-content: center;
+    padding-top: 114px;
+    padding-bottom: 120px;
+}
+
+.touch {
+    color: #006DE8;
+    font-size: 16px;
+}
+
+    .touch:after {
+        content: "";
+        position: absolute;
+        border-bottom: 2px solid #006DE8; /* border-size & color are now controllable */
+        width: 70px;
+        height: 14px;
+        margin-left: 1em;
+    }
+
+.rubrik {
+    color: #002249;
+    font-family: "Montserrat", sans-serif;
+    font-size: 60px;
+}
+
+.form {
+    width: 570px;
+    height: 70px;
+    padding-left: 30px;
+    margin-right: 70px;
+    border: none;
+}
+
+#submit-button {
+    width: 214px;
+    height: 70px;
+    background-color: #0066FF;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+}
+
+#square2 {
+    display: flex;
+    justify-content: center;
+}
+/* Showcase 3  */
+
+.dark-bakgrund {
+    background-color: #00152D;
+}
+
+#showcase3 {
+    display: flex;
+}
+
+    #showcase3 .small1 {
+        color: #006DE8;
+        font-size: 16px;
+        margin-top: 130px;
+        margin-bottom: 35px;
+    }
+
+.small1:after {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #006DE8; /* border-size & color are now controllable */
+    width: 70px;
+    height: 14px;
+    margin-left: 1em;
+}
+
+    #showcase3 h1 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 60px;
+        margin-bottom: 35px;
+        color: white;
+    }
+
+    #showcase3 .medium {
+        color: #A1BBD7;
+        font-weight: 24px;
+        margin-bottom: 35px;
+    }
+
+    #showcase3 .big {
+        color: #C5D5E7;
+        font-size: 16px;
+        width: 531px;
+        margin-bottom: 45px;
+    }
+
+    #showcase3 .Learn {
+        background-color: #006DE8;
+        color: white;
+        width: 173px;
+        height: 60px;
+        border: none;
+        margin-bottom: 130px;
+    }
+
+#Square {
+    margin-left: 100px;
+    margin-top: 120px;
+}
+
+
+/* Showcase 4 */
+
+#showcase4 {
+    display: flex;
+}
+
+    #showcase4 .column6 {
+        margin-right: 465px;
+    }
+
+    #showcase4 .name {
+        font-family: "Montserrat", sans-serif;
+        font-size: 40px;
+        margin-top: 120px;
+        margin-bottom: 30px;
+        color: white;
+    }
+
+    #showcase4 .big {
+        font-size: 16px;
+        margin-bottom: 40px;
+        color: white;
+        width: 339px;
+    }
+
+    #showcase4 .small {
+        font-size: 16px;
+        margin-bottom: 180px;
+        color: white;
+        width: 339px;
+    }
+
+
+    #showcase4 .column7 h1 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 34px;
+        margin-top: 120px;
+        margin-bottom: 30px;
+        color: white;
+    }
+
+    #showcase4 .Hours {
+        color: #C2D1E2;
+        font-size: 20px;
+        line-height: 36px;
+        margin-bottom: 35px;
+    }
+
+    #showcase4 .column7 .small {
+        font-size: 16px;
+        margin-bottom: 230px;
+    }
+
+.white {
+    background-color: white;
+    height: 100px;
+}
+
+#little-circle {
+    position: absolute;
+    margin-left: 400px;
+    margin-top: -200px;
+}
+
+#blue-circle {
+    position: absolute;
+    margin-left: -1500px;
+    margin-top: -300px;
+}
+
+#copy {
+    color: #C2D1E2;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    border-top: solid 1px #707070;
+}
+
+/* Services sidan */
+
+#title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 130px;
+}
+
+    #title h1 {
+        font-size: 80px;
+        color: #002249;
+        font-family: "Roboto", sans-serif;
+    }
+
+    #title .links {
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+        color: #69a1bb;
+        margin-bottom: 136px;
+    }
+
+        #title .links a {
+            margin: 0 1rem;
+        }
+
+/* Part one (första delen på services sidan) */
+#partOne .grid {
+    margin: 135px 0;
+    display: grid;
+    grid-template-columns: 370px 370px 370px;
+    column-gap: 30px;
+    row-gap: 40px;
+    justify-content: center;
+    margin-bottom: 110px;
+}
+
+#partOne .grey {
+    background-color: #C1C1C1;
+    width: 370px;
+    height: 231px;
+}
+
+#partOne .dark {
+    background-color: #002249;
+    width: 370px;
+    height: 70px;
+}
+
+#partOne .block {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#partOne .block-2 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+#blue-square {
+    margin-top: -140px;
+    margin-left: 20px;
+}
+
+#partOne .grey-2 {
+    background-color: #C1C1C1;
+    width: 370px;
+    height: 119px;
+}
+
+#partOne .light-blue {
+    background-color: #0066FF;
+    width: 370px;
+    height: 180px;
+}
+
+#blue-square2 {
+    margin-top: -360px;
+    margin-left: 20px;
+}
+
+#partOne .IT {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 25px;
+}
+
+#partOne .bread {
+    color: white;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+/* 404 page not found  */
+
+#page-not-found h1 {
+    color: #002249;
+    font-family: "Montserrat", sans-serif;
+    font-size: 80px;
+    display: flex;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    display: flex;
+    justify-content: center;
+}
+
+#page-not-found {
+    text-align: center;
+    margin-top: 240px;
+    margin-bottom: 210px;
+}
+
+.signin .form-control {
+    background-color: white;
+}
+.form-group .form-control {
+ background-color: white;
+}
+   
